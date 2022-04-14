@@ -33,7 +33,7 @@ ax.loglog(wav,flux)
 #ax.set_xlim([10,1000])
 ax.set_xlabel(r'Wavelength ($\mu$m)')
 ax.set_ylabel(r'Solar Luminosities/Wavelength [Lsun /($\mu$m)]')
-plt.savefig('/home/robinson.eric/ast4930/hw7/galaxy_SED.png',dpi=300)
+plt.savefig('robinson_eric_hw7.png',dpi=300)
 
 # Integrating
 integral = (np.trapz(flux[0:833], x=-wav[0:833])).to(u.erg / u.s)
